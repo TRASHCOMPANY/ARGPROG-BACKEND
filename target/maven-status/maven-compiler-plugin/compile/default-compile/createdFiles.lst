@@ -1,0 +1,14 @@
+com\example\proyectointegrador\ProyectointegradorApplication.class
+com\example\proyectointegrador\controller\authController.class
+com\example\proyectointegrador\model\skills.class
+com\example\proyectointegrador\service\authService.class
+com\example\proyectointegrador\repository\UserRepository.class
+com\example\proyectointegrador\service\ISkillsService.class
+com\example\proyectointegrador\service\IAuthService.class
+com\example\proyectointegrador\controller\controller.class
+com\example\proyectointegrador\controller\skillsController.class
+com\example\proyectointegrador\service\IUserService.class
+com\example\proyectointegrador\service\UserService.class
+com\example\proyectointegrador\repository\SkillsRepository.class
+com\example\proyectointegrador\service\SkillsService.class
+com\example\proyectointegrador\model\User.class
