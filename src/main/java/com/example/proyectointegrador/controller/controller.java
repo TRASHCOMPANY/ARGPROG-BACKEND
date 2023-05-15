@@ -64,5 +64,11 @@ public class controller {
     }
       
     
+      @PostMapping("/user/login")
+    
+     public void login (@RequestBody String login) {
+        System.out.println(login);
+       
+     }
     
 }

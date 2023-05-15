@@ -62,6 +62,7 @@ public class UserService implements IUserService {
     }
 
     @Override
+    
       @Transactional(readOnly = true)
     public User findUser(Long id) {
       return (User) userRepoMethods.findById(id).orElse(null);
