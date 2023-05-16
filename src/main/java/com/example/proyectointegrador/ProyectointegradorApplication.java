@@ -19,7 +19,7 @@ public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://portfolioargprog-backend-gilf.onrender.com/");
+				registry.addMapping("/**").allowedOrigins("https://frontendargprog-5e33e.web.app");
 			}
 		};
 	}
