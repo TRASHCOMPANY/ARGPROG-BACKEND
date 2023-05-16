@@ -2,6 +2,9 @@ package com.example.proyectointegrador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class ProyectointegradorApplication {
@@ -10,4 +13,15 @@ public class ProyectointegradorApplication {
 		SpringApplication.run(ProyectointegradorApplication.class, args);
 	}
 
+        
+@Bean
+public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedOrigins("https://portfolioargprog-backend-gilf.onrender.com/");
+			}
+		};
+	}
+        
 }
